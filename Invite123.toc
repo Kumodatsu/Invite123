@@ -1,0 +1,7 @@
+## Interface: 80300
+## Title: Invite 123
+## Notes: Automatically invite people who say 123 in guild chat.
+## Author: Kumodatsu
+## Version: 0.0.1
+
+src\invite123.lua
