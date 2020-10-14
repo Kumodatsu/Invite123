@@ -1,7 +1,8 @@
 local addon_name, I123 = ...
 
 local keywords = {
-    "123"
+    "123",
+    "321"
 }
 
 local events = {
