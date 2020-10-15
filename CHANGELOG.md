@@ -6,7 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
-- People who send "123" in a whisper now also receive a group invite.
+- People who send a keyword in a whisper now also receive a group invite.
+- "321" has been added as a keyword.
+
+### Changed
+- Updated for World of Warcraft 9.0.1.
 
 ## [0.0.1] - 2020-10-12
 ### Added

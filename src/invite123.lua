@@ -33,7 +33,7 @@ end
 
 local invite = function(player)
     if player == _self or not in_group() then return end
-    InviteUnit(player)
+    C_PartyInfo.InviteUnit(player)
 end
 
 -- Event handling
