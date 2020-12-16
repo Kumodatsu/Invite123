@@ -2,6 +2,10 @@ local addon_name, I123 = ...
 
 local keywords = {
     "123",
+    "132",
+    "213",
+    "231",
+    "312",
     "321"
 }
 
@@ -19,6 +23,15 @@ end
 
 local is_keyword = function(word)
     return contains(keywords, word)
+end
+
+local has_keyword = function(word)
+    for _, keyword in ipairs(keywords) do
+        if word:find(keyword) then
+            return true
+        end
+    end
+    return false
 end
 
 local is_event = function(event)
@@ -42,7 +55,7 @@ frame_events.OnEvent = function(self, event, arg1, arg2)
     if is_event(event) then
         local msg    = arg1
         local player = arg2
-        if is_keyword(msg) then
+        if has_keyword(msg) then
             invite(player)
         end
     end
